@@ -2,9 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title = 'basesApp';
+
+  public title:string = 'Contador App';
+  meter: number = 10;
+
+  
+  aggregate(value: number) {
+
+    this.meter += value;
+  }
 }
