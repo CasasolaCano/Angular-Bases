@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'meter-component',
-    templateUrl: 'meter.component.html'
+    templateUrl: './meter.component.html'
 })
 
 export class MeterComponent {
