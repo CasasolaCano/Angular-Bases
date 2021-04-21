@@ -17,11 +17,14 @@
         <h3>Agregar</h3>
         <hr>
 
-        <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Poder">
+        <form (ngSubmit)="add()">
 
-            <button>
+            <!-- En estos inputs se esta tanto escuchando como emitiendo con el ngModel
+            el nombre del Character "new" Two way data binding -->
+            <input type="text" placeholder="Nombre" name="name" [(ngModel)]="new.name">
+            <input type="text" placeholder="Poder" name="power" [(ngModel)]="new.power">
+
+            <button type="submit">
                 Agregar
             </button>
 
