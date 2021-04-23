@@ -24,24 +24,10 @@ export class MainPageComponent{
   ];
 
   new:Character = {
-    name: '',
-    power: 0
+    name: 'Mastro Roshi',
+    power: 1000
   }
 
-  add() {
-
-    if(this.new.name.trim().length === 0) {
-      return;
-    }
-
-    console.log(this.new);
-
-    this.characters.push(this.new);
-
-    this.new = {
-      name: '',
-      power: 0
-    }
-  }
+  
 
 }
