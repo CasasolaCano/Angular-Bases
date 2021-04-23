@@ -28,6 +28,10 @@ export class MainPageComponent{
     power: 1000
   }
 
+  addCharacter( char: Character) {
+    this.characters.push(char);
+  }
+
   
 
 }
